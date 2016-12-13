@@ -1,0 +1,363 @@
+
+
+
+/* =2. Navigation
+=================
+*/
+
+.main-navigation {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  height: 88px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: .3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+  .main-navigation .navbar-nav > li > a {
+    color:  rgba(255,255,255,0.9);
+    font-size: 1.8rem;
+    padding: 34px 0;
+    margin-right: 22px;
+    margin-left: 22px;
+    transition: .3s ease-in-out;
+    border-bottom: 4px solid transparent;
+  }
+    .main-navigation .navbar-nav .open>a,
+    .main-navigation .navbar-nav .open>a:focus,
+    .main-navigation .navbar-nav .open>a:hover,
+    .main-navigation .navbar-nav>.active>a:hover  {
+      background-color: transparent;
+      color: #ffffff;
+    }
+
+      /* active state in main navigation */
+      .main-navigation li.active {
+        background: transparent;
+      }
+      .main-navigation .nav > li.active > a,
+      .main-navigation .nav > li.active > a:focus,
+      .main-navigation .nav > li.open > a,
+      .main-navigation .nav > li > a:hover,
+      .main-navigation .nav > li > a:focus,
+      .main-navigation .nav > li > a:active {
+        border-bottom: 4px solid #0055a5;
+        padding-bottom: 30px;
+        color: #ffffff;
+        background-color: transparent;
+      }
+
+    .nav-phone {
+      display: inline-block;
+      color: #ffffff;
+      font-size: 1.8rem;
+      padding: 8px 12px 5px 12px;
+      border: 1px solid #0055a5;
+      border-radius: 4px;
+      margin: 24px 5px 22px 10px;
+      background-color: transparent;
+      transition: .3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .main-navigation .navbar-nav > li > a.nav-contact {
+      display: inline-block;
+      color: #ffffff;
+      font-size: 1.8rem;
+      padding: 8px 12px 5px 12px;
+      border: 1px solid #0055a5;
+      background-color: #0055a5;
+      border-radius: 4px;
+      margin: 24px 40px 22px 5px;
+      line-height: 1.5;
+      transition: .3s ease-in-out;
+    }
+
+      .nav-phone:hover, .main-navigation .navbar-nav > li > a.nav-contact:hover {
+        background-color: #0066c5;
+        
+        border: 1px solid #0066c5;
+      }
+        @media (max-width: 768px) {
+          .main-navigation .navbar-nav > .nav-phone:visited , 
+          .main-navigation .navbar-nav > .nav-phone:active , 
+          .main-navigation .navbar-nav > .nav-phone:focus{
+            background-color: transparent !important;
+        }
+
+        }
+      
+    
+    .navbar-brand.logo {
+      padding: 10px 35px;
+      margin-top: 0;
+      margin-left: 0;
+      height: 88px;
+      max-height: 88px;
+      width: auto;
+      transition: .3s ease-in-out;
+    }
+
+    .logo img {
+      height: 100%;
+      width: auto;
+      padding: 10px;
+      transition: .3s ease-in-out;
+    }
+
+        /* dropdown style */
+
+        .dropdown .dropdown-menu li a {
+          font-weight: 600;
+          line-height: 2.2;
+        }
+
+        /* Shrinked navigaiton on scroll, only works in desktop view */
+
+        @media (min-width: 768px) {
+
+          .main-navigation.shrink .navbar-brand.logo {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            height: 60px;
+          }
+
+          .navbar-right .dropdown-menu {
+            right: auto;
+            left: 0;
+          }
+
+          .main-navigation.shrink {
+            height: 60px;
+          }
+
+            .main-navigation.shrink .navbar-nav > li > a {
+              padding: 20px 0;
+              margin-right: 22px;
+              margin-left: 22px;
+              padding-bottom: 16px;
+            }
+
+            .main-navigation .navbar-nav > li > a.nav-contact {
+              padding: 8px 12px 5px 12px;
+            }
+
+              .main-navigation.shrink .navbar-nav > li > a.nav-contact {
+                margin: 10px 40px 22px 5px;
+              }
+
+              .main-navigation.shrink .nav-phone {
+                margin: 10px 5px 22px 10px;
+              }
+        }
+
+               @media (max-width: 767px) {
+
+              /* navigation on mobile */
+
+              .main-navigation {
+                background: rgba(0, 0, 0, 0.9);
+              }
+
+              .navbar-brand.logo {
+                padding-left: 5px;
+              }
+
+                .navbar-default .navbar-toggle {
+                  border: none;
+                  padding-top: 25px;
+                  transition: .3s ease-in;
+                }
+                  .navbar-default .navbar-toggle:hover,
+                  .navbar-default .navbar-toggle:focus,
+                  .navbar-default .navbar-toggle:active {
+                    background: transparent;
+                  }
+
+                    .navbar-default .navbar-collapse {
+                      background: rgba(0, 0, 0, 0.9);
+                      border: 0;
+                    }
+
+                       .main-navigation .navbar-nav > li > a,
+                       .main-navigation .navbar-nav > li > a.nav-contact,
+                       .nav-phone {
+                          padding: 10px 0;
+                          text-align: center;
+                          margin-right: 25px;
+                          margin-left: 25px;
+                       }
+
+                          .nav-phone,
+                          .main-navigation .navbar-nav > li > a.nav-contact {
+                            display: block;
+                            padding-right: 10px;
+                            padding-left: 10px;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                          }
+
+                           /* hide blue border on mobile devices */
+                          .main-navigation .nav > li.active > a,
+                          .main-navigation .nav > li.active > a:focus,
+                          .main-navigation .nav > li.open > a,
+                          .main-navigation .nav > li > a:hover,
+                          .main-navigation .nav > li > a:focus,
+                          .main-navigation .nav > li > a:active {
+                            border-bottom: 0;
+                            padding-bottom: 0;
+                          }
+
+
+                          .navbar-fixed-bottom .navbar-collapse,
+                          .navbar-fixed-top .navbar-collapse {
+                            max-height: 500px;
+                          }
+
+                          /* navigation shrink */
+                          .main-navigation.shrink {
+                            height: 60px;
+                          }
+                              .main-navigation.shrink .navbar-brand.logo {
+                                padding-top: 5px;
+                                padding-bottom: 5px;
+                                height: 60px;
+                                margin-top: 0;
+                              }
+
+                                  .main-navigation.shrink .navbar-toggle {
+                                    padding-top: 22px;
+                                    margin-top: 0;
+                                  }
+
+                                .main-navigation .navbar-nav > li > a{
+                                  border-bottom: 0;
+                                  padding-bottom: 0;
+                                }
+
+
+                     }
+
+
+
+
+      /* Navigaiton view based on resolution */
+
+      @media (max-width: 1225px) and (min-width: 768px) {
+
+        .navbar-brand.logo {
+          padding: 5px;
+          height: 60px;
+          margin-top: 15px;
+        }
+
+          .main-navigation.shrink .navbar-brand.logo {
+            margin-top: 0;
+          }
+
+        .main-navigation .navbar-nav > li > a,
+        .main-navigation.shrink .navbar-nav > li > a {
+          margin-right: 10px;
+          margin-left: 10px;
+          font-size: 13px;
+        }
+
+        .main-navigation .navbar-nav > li > a.nav-contact,
+        .nav-phone {
+          font-size: 13px;
+        }
+
+        .main-navigation .navbar-nav > li > a.nav-contact,
+        .main-navigation.shrink .navbar-nav > li > a.nav-contact {
+          margin-left: 2px;
+          margin-right: 5px;
+        }
+
+        .nav-phone,
+        .main-navigation.shrink .nav-phone {
+          margin-right: 2px;
+          margin-left: 5px;
+        }
+
+                    /* shrinked navigation position form the top */
+                    .main-navigation.shrink .nav-phone,
+                    .main-navigation.shrink .navbar-nav > li > a.nav-contact {
+                      margin-top: 12px;
+                    }
+      }
+
+        @media (max-width: 1225px) and (min-width: 1032px) {
+          .navbar-brand.logo {
+            padding: 5px;
+            height: 80px;
+            margin-top: 5px;
+          }
+
+          .main-navigation .navbar-nav > li > a,
+          .main-navigation .navbar-nav > li > a.nav-contact,
+          .nav-phone {
+            font-size: 16px;
+          }
+
+          .main-navigation .navbar-nav > li > a.nav-contact {
+            margin-right: 20px;
+          }
+        }
+
+/* dropdown fix */
+@media (min-width: 768px) {
+  .navbar-nav>li>.dropdown-menu {
+    border-top: 5px solid #0055a5;
+    margin-top: -5px;
+  }
+  
+  
+   
+   
+
+  .navbar-header {
+      float: left;
+      width: 15%;
+  }
+}
+    @media (max-width: 768px) {
+      .navbar-nav .open .dropdown-menu{
+        text-align: left;
+      }
+       .main-navigation .nav > li.active > a, 
+       .main-navigation .nav > li.active > a:focus,
+       .main-navigation .nav > li.open > a, 
+       .main-navigation .nav > li > a:hover, 
+       .main-navigation .nav > li > a:focus, 
+       .main-navigation .nav > li > a:active{
+
+        padding-bottom: 0px;
+       }
+        .main-navigation .navbar-nav > li > a{
+        border-bottom: 0;
+       }
+
+       .main-navigation .navbar-nav > li > a.nav-contact:hover{
+        padding-bottom: 10px;
+       }
+
+    }
+
+    .caret{
+          display: inline-block;
+          width: 0;
+          height: 6px;
+          margin-left: 0px;
+          vertical-align: middle;
+          border-top: 5px dashed;
+          border-top: 4px solid\9;
+          border-right: 5px solid transparent;
+          border-left: 5px solid transparent;
+      }
+

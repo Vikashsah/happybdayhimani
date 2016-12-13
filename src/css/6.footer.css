@@ -1,0 +1,116 @@
+
+
+
+/* =6.footer
+==============
+*/
+    footer {
+        background: #ffffff;
+    }
+
+        /* Partners section */
+        .home-partners {
+          padding: 130px 0 120px;
+        }
+          @media (max-width: 768px) {
+            .home-partners {
+              padding: 30px 0 25px;
+            }
+
+          }
+
+          .home-partners-img {
+            list-style: none;
+            padding: 0;
+          }
+
+            .home-partners-img li {
+              display: inline;
+              margin-right: 50px;
+              margin-left: 50px;
+            }
+
+              @media (max-width: 1121px) {
+                .home-partners-img li {
+                  margin-right: 25px;
+                  margin-left: 25px;
+                }
+              }
+
+                @media (max-width: 921px) {
+                  .home-partners-img li {
+                    margin-right: 12px;
+                    margin-left: 12px;
+                  }
+
+                    .home-partners-img img {
+                      max-width: 100px;
+                    }
+                }
+
+                    @media (max-width: 520px) {
+                      .home-partners-img li {
+                        margin: 30px auto;
+                        float: none;
+                        display: block;
+                        width: 100%;
+                      }
+
+                        .home-partners-img img {
+                          max-width: 100%;
+                        }
+                    }
+
+footer {
+  text-align: center;
+}
+
+  .copyright-info {
+    margin: 40px auto 100px;
+    font-size: 1.5rem;
+  }
+
+   @media (max-width: 768px) {
+      .copyright-info {
+        margin: 15px auto 37px;
+        font-size: 1.5rem;
+      }
+   }
+
+  .social-icons {
+  	padding-top: 50px;
+  	display: inline-block;
+  	width: 100%;
+  }
+    @media (max-width: 768px) {
+      .social-icons {
+          padding-top: 20px;
+          
+        }
+    }
+
+  	.social-icons ul {
+  		padding: 0;
+  	}
+
+	  	.social-icons ul.social li {
+	  		list-style: none;
+	  		display: inline;
+	  		font-size: 2.5rem;
+	  	}
+
+	  		.social-icons a {
+	  			background: #676767;
+	  			color: #ffffff;
+	  			width: 50px;
+	  			height: 50px;
+	  			text-align: center;
+	  			border-radius: 50%;
+	  			display: inline-block;
+	  			line-height: 56px;
+	  			transition: .3s ease-in;
+	  			margin: 10px;
+	  		}
+	  			.social-icons a:hover {
+	  				background: #0055a5;
+	  			}

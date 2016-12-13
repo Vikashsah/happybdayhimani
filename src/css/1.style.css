@@ -1,0 +1,85 @@
+/* TODOs
+========= */
+
+/*
+
+  1.Global
+  2.Navigation
+  3.Slider
+  4.Content
+  5.Buttons
+  6.Footer
+
+ */
+
+
+/* =1.Global
+========== */
+
+body {
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2,
+.h2 {
+  font-size: 3.6rem;
+}
+
+.text-large {
+  font-size: 3.8rem !important;
+}
+
+a {
+  color: #0055a5;
+}
+
+  a:hover {
+    color: #0066c5;
+    text-decoration: none;
+  }
+
+  a:focus,
+  a:active {
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+
+.ot-table {
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.ot-table-cell {
+  display: table-cell;
+  border-collapse: collapse;
+}
+
+/* hidden on  */
+
+@media (max-width: 767px) {
+  .mobile-hide {
+    display: none;
+  }
+}

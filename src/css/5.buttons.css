@@ -1,0 +1,37 @@
+
+
+/* 5.Buttons 
+============
+*/
+
+.button {
+	padding: 15px 30px;
+	margin: 20px 0;
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 2rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+	.button:hover {
+		text-decoration: none;
+	}
+
+	.button-default {
+		background: #ffffff;
+		font-size: 2rem;
+		color: #000000;
+		font-weight: 600;
+		text-transform: uppercase;
+		transition: .2s ease-in;
+	}
+
+	.banner-cta {
+		background: #0055a5;
+		color: #ffffff;
+	}
+		.banner-cta:hover, .button-default:hover {
+			background: #0066c5;
+			color: #ffffff;
+		}
